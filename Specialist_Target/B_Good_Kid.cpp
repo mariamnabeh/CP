@@ -35,25 +35,19 @@ long long sub(long long x, long long y, const long long &mod)
 
 //وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 void Remy() {
-   ll n,x;
-    cin>>n>>x;
-    vll a(n);
-    ll sum=0;
-    for(int i=0;i<n;i++) {cin>>a[i];}
-    ll count=1,l=0;
-    for(int i=0;i<n;i++){
-sum+=a[i];
-
-
+  ll n; cin>>n;
+vll a(n);
+for(int i=0;i<n;i++){
+    cin>>a[i];
 }
 
-    
-
-cout<<count<<el;
-  
-
-
-
+sort(all(a));
+a[0]+=1;
+ll ans=1;
+for(int i=0;i<n;i++){
+ans*=a[i];
+}
+cout<<ans<<el;
 
 
 
@@ -65,7 +59,7 @@ int main() {
 cin.tie(0)->sync_with_stdio(0);
 
 int t = 1;
-//cin >> t;
+cin >> t;
 cout << fixed << setprecision(10);
     while (t--) {
 

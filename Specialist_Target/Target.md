@@ -1,6 +1,6 @@
 ## Heyoo, this is Mariam Nabeh!
 
-Today, **18/8/2026**, I decided to work hard until the end of my vacation and see if I can reach **Specialist on Codeforces**.
+Today, **18/8/2026**, I decided to work hard to see if I can reach **Specialist on Codeforces** befor 2026 finishs!
 
 I'm currently a **Newbie with a rating of 1131**.
 
@@ -16,10 +16,10 @@ Let's see. 👀
 
 ### What's the plan?
 
-- Do a virtual contest almost every day, mainly solving problems around **800–1500**
-- Study **Graphs**
+- Do a virtual contest & Live ones, mainly solving problems around **800–1500**
+- Study **Graphs** & **combinatorics** And maybe more
 - Practice techniques I've already learned
-- Solve lots of previous problems
+- Solve lots of previous problems & CSES Sheets(Frist Two)
 - And, of course... do **a LOT of mathhhhh** 😭
 
 I'm not expecting everything to go perfectly, but I want to see how far I can get if I actually stay consistent for the next month.
