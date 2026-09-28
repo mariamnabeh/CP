@@ -41,11 +41,17 @@ cin>>n;
 vll a(n);
 for(int i=0;i<n;i++) cin>>a[i];
 
+        ll mn = *min_element(a.begin(), a.end());
+        ll mx = *max_element(a.begin(), a.end());
+ll c1=count(a.begin(), a.end(), mn);
+ll c2=count(a.begin(), a.end(), mx);
+if(mn==mx){
+    cout<<1ll*1*n*(n-1)<<el;
+}
 
-
-
-
-
+else{
+    cout<<2*(c1*c2)<<el;
+}
 
 
 

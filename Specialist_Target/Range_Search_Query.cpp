@@ -42,32 +42,44 @@ void Remy()
     cin >> q;
     string s, t;
     cin >> s >> t;
+string a="";
+
     while (q--)
     {
+        
+        bool  f=0;
+
         ll l, r;
         cin >> l >> r;
-        l--, r--;
-        if (l >= 0 && r < s.length() && l <= r)
-        {
-            string sub = s.substr(l, r - l + 1);
-            if (sub.find(t) != string::npos)
-            {
-
-                cout << "Yes" << el;
-            }
-            else
-            {
-                cout << "No" << el;
-            }
-        }
-            else
-            {
-                cout << "No" << el;
-            }
-        
-    }
+        l--;
+        r--;
+   while(l + t.size() - 1 <= r){
+if(s[l]==t[0]){
+    ll j=0;
+while(j<t.size()&&s[l+j]==t[j]){
+j++;
+}
+if(j==t.size()){
+    f=1;
+    break;
 }
 
+
+    }
+    l++;
+}
+if(f){
+    cout<<"Yes"<<el;
+}
+
+else{
+    cout<<"No"<<el;
+}
+
+    }
+
+
+}
 int main()
 {
     cin.tie(0)->sync_with_stdio(0);
