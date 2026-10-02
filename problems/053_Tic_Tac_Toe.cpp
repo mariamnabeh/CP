@@ -53,18 +53,7 @@ using vpcl = vector<pair<char,long long> >;
 using vplc = vector<pair<long long,char> >;
 
 // ---------- Functions ----------
-const ll MOD = 1e9 + 7;
-ll power(ll a, ll b)
-{
-ll res = 1;
-while (b)
- {
-  if (b & 1) res = res * a % MOD;
- a = a * a % MOD;
- b >>= 1;
- }
-return res;
-}
+
 bool win(string s[],char c){
   return
     (s[0][0]==c&&s[0][1]==c&&s[0][2]==c) ||
