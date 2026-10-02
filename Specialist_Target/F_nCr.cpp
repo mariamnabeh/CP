@@ -99,28 +99,28 @@ using namespace combinatorics;
 
 void Remy()
 {
-    init(MAX_N,MOD);
+  // init(1e6+5,1e9+7); 
+
+ll n, r;
+cin>>n>>r;
+cout<<nCr(n,r)<<el;
 
 
 
 
 
 
-
-
-
-
-
-    
 
 }
 
-int main()
-{
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+int main() {
+cin.tie(0)->sync_with_stdio(0);
+ init(1e6+5,1e9+7); 
+int t = 1;
+cin >> t;
+cout << fixed << setprecision(10);
+    while (t--) {
 
-    Remy();
-
-    return 0;
+        Remy();
+    }
 }

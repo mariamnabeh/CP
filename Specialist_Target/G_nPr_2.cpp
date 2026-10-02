@@ -99,19 +99,18 @@ using namespace combinatorics;
 
 void Remy()
 {
-    init(MAX_N,MOD);
+ init(1e6+5,1e9+7);
+
+ll n, r;
+cin>>n>>r;
+ll ans=1;
+for(ll i=n;i>n-r;i--){
+ans=mul(ans,i);
+}
+
+cout<<ans<<el;
 
 
-
-
-
-
-
-
-
-
-
-    
 
 }
 

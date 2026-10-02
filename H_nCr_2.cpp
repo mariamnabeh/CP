@@ -99,19 +99,7 @@ using namespace combinatorics;
 
 void Remy()
 {
-    init(MAX_N,MOD);
-
-
-
-
-
-
-
-
-
-
-
-    
+   init(200000,1e9+7); 
 
 }
 
