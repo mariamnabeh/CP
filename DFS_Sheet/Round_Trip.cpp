@@ -15,14 +15,13 @@ const long long INF = 1e18;
 const double PI = acos(-1.0);
 const double EPS = 1e-9;
 #define el '\n'
- 
- 
+const int N = 1e5 + 5;
+
 // Bitwise Operations
 #define GETBIT(x, i) (((x) >> (i)) & 1ULL)   // Get bit
 #define SETBIT(x, i) ((x) | (1ULL << (i)))   // Set bit
 #define FLIPBIT(x, i) ((x) ^ (1ULL << (i)))  // Flip bit
 #define CLEARBIT(x, i) ((x) & ~(1ULL << (i))) // Clear bit
-
 
 long long mul(long long x, long long y, const long long &mod) 
 { return ((x % mod) * (y % mod)) % mod; }
@@ -31,42 +30,60 @@ long long add(long long x, long long y, const long long &mod)
 long long sub(long long x, long long y, const long long &mod)
 { return (((x % mod) - (y % mod)) % mod + mod) % mod;} 
 
+//وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 
+vector<int> adj[N];
+int vis[N], p[N];
+vector<int> ans;
 
-//وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
-void Remy() {
-    ll N=1e16;
- ll n; cin>>n;
- ll m; cin>>m;   
-vector<ll>adj[N];
+void dfs(ll u, ll par) {
+    vis[u] = 1;
+    p[u] = par;
 
+    for (int v : adj[u]) {
+        if (v == par) continue;
 
+        if (vis[v]) {
+            ans.push_back(v);
+            for (int cur = u; cur != v; cur = p[cur]) {
+                ans.push_back(cur);
+            }
+            ans.push_back(v);
 
+            cout << ans.size() << el;
+            for (int x : ans) cout << x << " ";
+            cout << el;
 
+            exit(0);
+        }
 
-
-
-
-
-
-
-
+        if (!vis[v]) {
+            dfs(v, u);
+        }
+    }
 }
 
-
-
 int main() {
-cin.tie(0)->sync_with_stdio(0);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
-int t = 1;
-//cin >> t;
-cout << fixed << setprecision(10);
-    while (t--) {
+    ll n, m;
+    if (!(cin >> n >> m)) return 0;
 
-        Remy();
+    while (m--) {
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
     }
 
-// shortcuts:
-//"os" for orderd_set+orderd_mulitset, "pw" for fast_power function :)
+    for (int i = 1; i <= n; i++) {
+        if (!vis[i]) {
+            dfs(i, 0);
+        }
+    }
+
+    cout << "IMPOSSIBLE" << el;
+
     M_NABEH
 }
