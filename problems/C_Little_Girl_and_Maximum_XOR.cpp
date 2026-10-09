@@ -31,23 +31,20 @@ long long add(long long x, long long y, const long long &mod)
 long long sub(long long x, long long y, const long long &mod)
 { return (((x % mod) - (y % mod)) % mod + mod) % mod;} 
 
-long long nCr(int n, int r) {
-    if (r < 0 || r > n) return 0;
-    if (r > n - r) r = n - r;
-    long long ans = 1;
-    for (int i = 1; i <= r; ++i) {
-        ans = ans * (n - r + i) / i;
-    }
-    return ans;
-}
 
 
 //وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 void Remy() {
-   string s;
-   cin>>s;
-   //npr
-  cout<<nCr()
+   ll l, r;
+   cin>>l>>r;
+ll mx=0 ,x=l^r;
+if(l==r){cout<<0<<el;
+return;}
+int msb = 64 - __builtin_clzll(x);
+ll ans=(1ll<<msb)-1;
+cout<<ans<<el;
+
+
 
 
 

@@ -35,7 +35,10 @@ long long sub(long long x, long long y, const long long &mod)
 
 //وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 void Remy() {
-    
+    ll N=1e16;
+ ll n; cin>>n;
+ ll m; cin>>m;   
+vector<ll>adj[N];
 
 
 
@@ -45,7 +48,9 @@ void Remy() {
 
 
 
-    
+
+
+
 }
 
 
