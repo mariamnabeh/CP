@@ -35,7 +35,22 @@ long long sub(long long x, long long y, const long long &mod)
 
 //وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 void Remy() {
-    
+ll x, y, z; cin>>x>>y>>z;
+vector<ll> a = {x, y, z};
+    sort(all(a));
+if(a[1]!=a[2]){
+    cout<<"NO"<<el;
+}
+else{
+  cout<<"YES"<<el;
+    cout<<a[0]<<" "<<a[2]<<" "<<a[2]<<el;
+   
+}
+
+
+
+
+
 }
 
 
