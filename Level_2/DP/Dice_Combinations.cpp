@@ -13,7 +13,7 @@ if (dp[i] != -1) return dp[i];
 ll ways = 0;
   
     for (int dice = 1; dice <= 6; dice++) {
-        ways = (ways + solve(i - dice)) ;
+        ways = (ways + solve(i - dice)) %mod;
 }
 
 

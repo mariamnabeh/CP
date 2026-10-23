@@ -1,0 +1,10 @@
+memset Function:
+
+Short for Memory Set.
+Used to fill an array with specific values: only 0 or -1.
+Syntax:memset(array_name, 0/-1, sizeof array_name);
+----------
+fill Function (For values other than 0 and -1):
+
+Used when you want to fill an array with another value (like INF or any other number) instead of just 0 or -1.
+Syntax:fill(array_name, array_name + size, value);
