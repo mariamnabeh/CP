@@ -1,0 +1,36 @@
+Before thinking of solving with DP:
+0. Hmmm, how can I solve it with a general solution?
+
+1.Ohh, TLE! Maybe it's DP?
+
+2.Okay, is it one of those questions?
+
+How many ways?
+
+Minimization problem
+
+Maximization problem
+
+Then try DP:
+
+- Recursive DP
+
+- Iterative DP
+
+3.Think this way:
+
+Recursive DP:
+Before thinking of DP, apply recursion and answer:
+
+What parameters define where I am?
+
+What is the base case?
+
+What does the function return?
+
+What options do I have from here?
+
+Then..Apply the DP! :)
+
+Iterative DP:
+(Coming soon)
