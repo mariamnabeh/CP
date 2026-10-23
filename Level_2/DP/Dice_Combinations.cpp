@@ -3,19 +3,24 @@ using namespace std;
 using ll = long long;
 using ld = long double;
 using ull = unsigned long long;
+const ll MOD = 1e9 + 7;
+const ll N = 1e6 + 5;
+ll dp[N]; ll n;
+ll solve(ll i){
+if (i<0) return 0;
+if(i==0) return 1;
+if (dp[i] != -1) return dp[i];
+ll ways = 0;
+  
+    for (int dice = 1; dice <= 6; dice++) {
+        ways = (ways + solve(i - dice)) ;
+}
 
-cost ll N=1e5+5;
-ll dp[N];
-ll a[N]; ll n;
-ll solve(i){
-if(i==n-1) return n;
-memset(dp,-1, sizeof dp);
 
 
 
 
-
-
+return dp[i] = ways;
 
 
 }
@@ -23,7 +28,8 @@ memset(dp,-1, sizeof dp);
 //وَأَنَّ سَعْيَهُ سَوْفَ يُرَى
 void Remy() {
  cin>>n;
- for(int i=0;i<n;i++) cin>>a[i];
+ memset(dp, -1, sizeof dp);
+cout<<solve(n)<<endl;
     
 }
 
